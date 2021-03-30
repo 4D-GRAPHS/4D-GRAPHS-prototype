@@ -15,7 +15,7 @@ Installation
 * Python dependencies can be easily installed by creating an Anaconda Python environment from the provided 4dgraphs.yml file:
   - `conda env create -f 4dgraphs.yml`
 * Activate the new environment: 
-  -`conda activate 4dgraphs`
+  - `conda activate 4dgraphs`
 * Do this every time you wish to run 4D-GRAPHS.
 * Getting code and data
   - `git clone https://github.com/4D-GRAPHS/4D-GRAPHS.git`
@@ -29,7 +29,8 @@ Installation
 Execution
 ---------
 The 4D-graphs is distributed with an example protein 3NIK, stored in input/3NIK (raw data) and input/3NIK-curated (annotated data). The 4D-graphs is executed by the following command:
-python3 EXEC_master_NOESY.py -p 3NIK-curated
+* `python3 EXEC_master_NOESY.py -p 3NIK-curated`
+
 which uses the 3NIK-curated protein.
 
 Running with own data
@@ -39,9 +40,11 @@ New proteins have to be placed into their own folders in input/. The protein ‘
  * list of HCNH peaks in `prot_HCNH.list` file
  * list of HSQC peaks in `prot_HSQC.list` file
  * optionally list of HNNH peaks in `prot_HNNH.list` file
+
 The peaks lists contain the following column:
  * the assignment of the HCNH group (‘?-?-?-?’ when unknown)
  * position of the peak in each dimension (4 for HCNH and HNNH, 2 for HSQC)
  * the amplitude of the peak (only HCNH and HNNH lists)
+
 With the new protein ‘prot’ stored in input/prot, the 4D-graphs can be executed by the command:
  * `python3 EXEC_master_NOESY.py -p prot`
