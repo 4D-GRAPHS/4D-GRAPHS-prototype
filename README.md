@@ -31,7 +31,7 @@ Execution
 The 4D-graphs is distributed with an example protein 3NIK, stored in input/3NIK (raw data) and input/3NIK-curated (annotated data). The 4D-graphs is executed by the following command:
 * `python3 EXEC_master_NOESY.py -p 3NIK-curated`
 
-which uses the 3NIK-curated protein. The result is stored into output_NHmapping.csv file. Note that precision of the result on 3NIK can be improved by changing method of graph edge weight computation by changing value of `what_edge_weight` to `EdgeWeightType.intersections` in `NOESY_master_settings.py`. This method is available for 3NIK-curated protein only with curent implementation, the universal method will be implemented in 4D-GRAPHS soon.
+which uses the 3NIK-curated protein. The result is stored into output_NHmapping.csv file. Note that precision of the result on 3NIK can be improved by changing method of graph edge weight computation by changing value of `what_edge_weight` to `EdgeWeightType.intersections` in `NOESY_master_settings.py`. This method is available for 3NIK-curated protein only with curent implementation, its universal implementation appears in 4D-GRAPHS soon.
 
 Running with own data
 ---------------------
