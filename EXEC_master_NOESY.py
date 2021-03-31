@@ -5,6 +5,8 @@ import getopt
 import pretty_errors
 import logging
 import os
+import pandas as pd
+from library.join_peak_features_with_peaks import join_peaks_with_features
 
 lg = logging.getLogger(__name__)
 
@@ -138,3 +140,11 @@ if Settings.compute_NHmap:
     #evaluate_NHmap(NHmap_csv=Settings.generated_file('_NHmap.csv'),
     #               protein_sequence_list=protein_sequence_list,
     #               start_resid=STARTING_RESID)
+
+    # Generate output NH mapping
+    out_file = 'output_NHmapping.csv'
+    NHmap_df = pd.read_csv(Settings.generated_file('_NHmap.csv'))
+    NHmap_df['ground_truth_aa'] = NHmap_df['sequence_rank'].apply(lambda index: protein_sequence_list[index])
+    join_peaks_with_features(NHmap_df.merge(HCNH_frames_df, on='frame'), HCNH_spectrum_df) \
+        .to_csv(out_file, index=None)
+    print("Result was stored in " + out_file + ".")
