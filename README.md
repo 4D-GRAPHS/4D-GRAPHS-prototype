@@ -6,7 +6,7 @@
 License
 ============
 
-4D-CHAINS software for protein NMR assignment is a property of Masaryk university and the authors are **Thomas Evangelidis** and **Konstantinos Tripsianes**. The code is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY- NC-ND 4.0). You are free to:
+4D-GRAPHS-prototype software for protein NMR assignment is a property of **Masaryk university** and the authors are **Thomas Evangelidis**, **Tomas Brazdil**, **Jiri Filipovic** and **Konstantinos Tripsianes**. The code is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY- NC-ND 4.0). You are free to:
 
 * Share - copy and redistribute the material in any medium or format.
 * The licensor cannot revoke these freedoms as long as you follow the license terms.
@@ -44,7 +44,7 @@ Installation
 
 Execution
 ---------
-The 4D-graphs is distributed with an example protein 3NIK, stored in input/3NIK (raw data) and input/3NIK-curated (annotated data). The 4D-graphs is executed by the following command:
+The 4D-graphs-prototype is distributed with an example protein 3NIK, stored in input/3NIK (raw data) and input/3NIK-curated (annotated data). The 4D-graphs-prototype is executed by the following command:
 * `python3 EXEC_master_NOESY.py -p 3NIK-curated`
 
 which uses the 3NIK-curated protein. The result is stored into output_NHmapping.csv file. Note that precision of the result on 3NIK can be improved by changing method of graph edge weight computation by changing value of `what_edge_weight` to `EdgeWeightType.intersections` in `NOESY_master_settings.py`. This method is available for 3NIK-curated protein only with curent implementation, its universal implementation appears in 4D-GRAPHS-prototype soon.
@@ -62,5 +62,5 @@ The peaks lists contain the following column:
  * position of the peak in each dimension (4 for HCNH and HNNH, 2 for HSQC)
  * the amplitude of the peak (only HCNH and HNNH lists)
 
-With the new protein ‘prot’ stored in input/prot, the 4D-graphs can be executed by the command:
+With the new protein ‘prot’ stored in input/prot, the 4D-graphs-prototype can be executed by the command:
  * `python3 EXEC_master_NOESY.py -p prot`
