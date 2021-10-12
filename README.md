@@ -6,7 +6,7 @@
 License
 ============
 
-4D-GRAPHS-prototype software for protein NMR assignment is a property of **Masaryk university** and the authors are **Thomas Evangelidis**, **Tomas Brazdil**, **Jiri Filipovic** and **Konstantinos Tripsianes**. The code is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY- NC-ND 4.0). You are free to:
+4D-GRAPHS-prototype software for protein NMR assignment is a property of **Masaryk university** and the authors are **Thomas Evangelidis**, **Tomáš Brázdil**, **Jiří Filipovič**, **David Porteš**, **Jana Hozzová** and **Konstantinos Tripsianes**. The code is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY- NC-ND 4.0). You are free to:
 
 * Share - copy and redistribute the material in any medium or format.
 * The licensor cannot revoke these freedoms as long as you follow the license terms.
